@@ -40,14 +40,14 @@ public class GSM {
 
 	void printInfoForTheLastOutgoingCall() {
 		if (lastOutgoingCall != null) {
-			System.out.println("Дължина на последното обаждане: " + lastOutgoingCall.duration+ " мин" + "\nполучател: "
+			System.out.println("Р”СЉР»Р¶РёРЅР° РЅР° РїРѕСЃР»РµРґРЅРѕС‚Рѕ РѕР±Р°Р¶РґР°РЅРµ: " + lastOutgoingCall.duration+ " РјРёРЅ" + "\nРїРѕР»СѓС‡Р°С‚РµР»: "
 					+ lastOutgoingCall.receiver.simMobileNumber);
 		}
 	}
 
 	void printInfoForTheLastIncomingCall() {
 		if (lastIncomingCall != null) {
-			System.out.println("Дължина на последното обаждане: " + lastIncomingCall.duration+ " мин" + "\nповикващ: "
+			System.out.println("Р”СЉР»Р¶РёРЅР° РЅР° РїРѕСЃР»РµРґРЅРѕС‚Рѕ РѕР±Р°Р¶РґР°РЅРµ: " + lastIncomingCall.duration+ " РјРёРЅ" + "\nРїРѕРІРёРєРІР°С‰: "
 					+ lastIncomingCall.caller.simMobileNumber);
 		}
 	}
@@ -71,9 +71,9 @@ public class GSM {
 		c.printInfoForTheLastIncomingCall();
 		b.printInfoForTheLastIncomingCall();
 		a.printInfoForTheLastOutgoingCall();
-		a.printInfoForTheLastIncomingCall(); // не извежда нищо, защото няма
-												// прието обаждане
-		System.out.println("Сума изхарчена за обажданията на телефон " + a.model + " е " + a.getSumForCall());
-		System.out.println("Сума изхарчена за обажданията на телефон " + b.model + " е " + b.getSumForCall());
+		a.printInfoForTheLastIncomingCall(); // РЅРµ РёР·РІРµР¶РґР° РЅРёС‰Рѕ, Р·Р°С‰РѕС‚Рѕ РЅСЏРјР°
+												// РїСЂРёРµС‚Рѕ РѕР±Р°Р¶РґР°РЅРµ
+		System.out.println("РЎСѓРјР° РёР·С…Р°СЂС‡РµРЅР° Р·Р° РѕР±Р°Р¶РґР°РЅРёСЏС‚Р° РЅР° С‚РµР»РµС„РѕРЅ " + a.model + " Рµ " + a.getSumForCall());
+		System.out.println("РЎСѓРјР° РёР·С…Р°СЂС‡РµРЅР° Р·Р° РѕР±Р°Р¶РґР°РЅРёСЏС‚Р° РЅР° С‚РµР»РµС„РѕРЅ " + b.model + " Рµ " + b.getSumForCall());
 	}
 }
