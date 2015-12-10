@@ -20,9 +20,9 @@ public class Computer {
 	}
 
 	void print() {
-		System.out.println("Година на производство: " + year + "\nцена: " + price + "\nпреносим ли е: " + 
-				isNotebook + "\nразмер на харддиска: " + hardDiskMemory + "\nсвободна памет: " + freeMemory
-				+ "\nоперационна система: " + operationSystem);
+		System.out.println("Р“РѕРґРёРЅР° РЅР° РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕ: " + year + "\nС†РµРЅР°: " + price + "\nРїСЂРµРЅРѕСЃРёРј Р»Рё Рµ: " + 
+				isNotebook + "\nСЂР°Р·РјРµСЂ РЅР° С…Р°СЂРґРґРёСЃРєР°: " + hardDiskMemory + "\nСЃРІРѕР±РѕРґРЅР° РїР°РјРµС‚: " + freeMemory
+				+ "\nРѕРїРµСЂР°С†РёРѕРЅРЅР° СЃРёСЃС‚РµРјР°: " + operationSystem);
 	}
 
 	public static void main(String[] args) {
