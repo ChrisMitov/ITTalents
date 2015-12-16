@@ -8,7 +8,7 @@ public class GSM {
 	Call lastOutgoingCall;
 
 	void insertSimCard(String simMobileNumber) {
-		if (simMobileNumber != null) {
+		if (simMobileNumber!= null) {
 			if (simMobileNumber.length() == 10 && simMobileNumber.substring(0, 2).equals("08")) {
 				this.simMobileNumber = simMobileNumber;
 				hasSimCard = true;
